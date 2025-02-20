@@ -17,17 +17,6 @@ Each `action` is an object describing `state` changes. Depending on a value of i
 
 **IMPORTANT!** DON'T modify the initial `state` object in any way!
 
-Napisz funkcję `transformStateWithClones`, która przyjmuje obiekt `state` i tablicę `actions`,
-stosuje każdą akcję do poprzedniego `state`, aby obliczyć następny stan,
-i zwraca tablicę ze stanami otrzymanymi po każdej akcji.
-
-Każda `action` jest obiektem opisującym zmiany `state`. W zależności od wartości jego właściwości `type` powinieneś wykonać następujące czynności:
-- `clear` - utwórz pusty obiekt state;
-- `addProperties` - dodaj wszystkie pary `key:value` podane we właściwości `extraData` do nowego `state`;
-- `removeProperties` - usuń wszystkie klucze podane w tablicy `keysToRemove` ze `state`. (ignoruj ​​nieistniejące)
-
-**WAŻNE!** NIE modyfikuj w żaden sposób początkowego obiektu `state`!
-
 Example 1:
 
 ```js
