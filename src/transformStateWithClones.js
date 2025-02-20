@@ -19,7 +19,7 @@ function transformStateWithClones(state, actions) {
       currentState = { ...currentState }; // Tworzymy kopię przed usunięciem
       action.keysToRemove.forEach((key) => delete currentState[key]);
     }
-    history.push(currentState); // Zapisujemy aktualny stan
+    history.push(Object.assign({}, currentState)); // Zapisujemy aktualny stan
   });
 
   return history;
